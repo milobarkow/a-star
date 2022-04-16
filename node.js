@@ -62,6 +62,11 @@ class Node {
 
     setTempPath() {
         this.path = true;
+        this.color = 'orange';
+    }
+
+    isTempPath() {
+        return this.path == true || this.color == 'blue';
     }
 
     isPath() {
